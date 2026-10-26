@@ -375,7 +375,7 @@ describe('Electron runtime package contract', () => {
       expect(runStep.env[workflowEnv]).toBe(`\${{ inputs.${inputName} }}`)
       expect(runStep.run).toContain(runnerEnv)
     }
-    expect(uploadStep.uses).toBe('actions/upload-artifact@v7')
+    expect(uploadStep.uses).toBe('actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9')
     expect(uploadStep.with.path).toBe('${{ env.ORCA_E2E_TERMINAL_PERF_REPORT_PATH }}')
   })
 
